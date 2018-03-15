@@ -1,0 +1,18 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+
+ <g class="currentLayer">
+  <title>Layer 1</title>
+  <g stroke="null" fill="#f3cec8" id="Icons">
+   <path stroke="null" fill="#ffffff" d="m18.853,17.438l-3.604,-3.604c-0.075,-0.075 -0.166,-0.127 -0.267,-0.156c0.639,-0.897 1.018,-1.992 1.018,-3.178c0,-3.037 -2.463,-5.5 -5.5,-5.5s-5.5,2.463 -5.5,5.5s2.463,5.5 5.5,5.5c1.186,0 2.281,-0.379 3.18,-1.018c0.028,0.101 0.08,0.191 0.155,0.267l3.604,3.604c0.301,0.301 0.858,0.227 1.249,-0.165c0.391,-0.391 0.465,-0.949 0.165,-1.25zm-8.353,-3.438c-1.932,0 -3.5,-1.568 -3.5,-3.5s1.568,-3.5 3.5,-3.5s3.5,1.568 3.5,3.5s-1.568,3.5 -3.5,3.5z" id="search-big"/>
+  </g>
+  <g id="Guides"/>
+ </g>
+ <g>
+  <title>Layer 2</title>
+  <rect fill="none" y="0" x="0" height="100%" width="100%" id="backgroundrect"/>
+ </g>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+</svg>

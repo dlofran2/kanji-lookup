@@ -1,0 +1,52 @@
+#searchPane {
+    width: 100vw;
+    height: 12vh;
+    background-color: #AACCB1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .4s;
+    overflow: scroll;
+    z-index: 1000;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "logo searchInput searchInput cancelIcon";
+}
+
+#searchPane.hide {
+    transform: translate(0, -13vh);
+}
+
+#searchPane.show {
+    transform: translate(0, 0);
+    overflow: hidden;
+}
+
+.searchInput {
+    grid-area: searchInput;
+    margin: 3vh 0;
+    height: 3vh;
+    width: auto;
+    cursor: default;
+    opacity: 1;
+    padding: 10px 20px;
+    overflow: visible;
+    border: 1px solid #AACCB1;
+        -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font: normal 18px/normal "Times New Roman", Times, serif;
+    background-color: #ffffff; 
+}
+
+.logoIcon{
+    grid-area: logo;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
+.cancelIcon {
+    grid-area: cancelIcon;
+    width: 30px;
+	height: 30px;
+}

@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.searchIcon {
+	width: 45px;
+	height: 45px;
+	position: relative;
+	top: 25%;
+}
+
+.dropdownIcon {
+	width: 27px;
+	height: 27px;
+	position: relative;
+	top: 32%;
+}
+
+.grid {
+	height: 12vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "dropdown title title search";
+	background-color: #B7D2B3;
+}
+
+.title {
+	grid-area: title;
+}
+
+.title h1 {
+	color: white;
+	font-size: 40px;
+}
+
+.search {
+	grid-area: search;
+}
+
+.dropdown {
+	grid-area: dropdown;
+}

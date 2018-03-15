@@ -1,0 +1,39 @@
+.searchArea {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "searchBox searchBox searchBox searchButton"
+}
+
+.searchBox {
+    grid-area: searchBox;
+    width: 80%;
+    margin: auto;
+}
+
+.searchButton {
+    grid-area: searchButton;
+    margin: auto;
+}
+
+.searchInputForm {
+    grid-area: searchInput;
+    margin: 3vh 0;
+    height: 3vh;
+    width: auto;
+    cursor: default;
+    opacity: 1;
+    padding: 10px 20px;
+    overflow: visible;
+    border: 1px solid #B4A08F;
+        -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font: normal 18px/normal "Times New Roman", Times, serif;
+    background-color: #ffffff; 
+}   
+
+.searchIcon {
+    width: 45px;
+    height: 45px;
+    margin: auto;
+}
