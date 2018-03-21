@@ -7,15 +7,15 @@ import speaker from './assets/speaker.svg';
 
 import './KanjiData.css';
 
-class KanjiData extends React.Component {
-  static propTypes = {
-    fetching: PropTypes.bool.isRequired,
-    data: PropTypes.array.isRequired,
-    error: PropTypes.string.isRequired,
-    onRequestData: PropTypes.func.isRequired,
-  }
+KanjiData.propTypes = {
+  fetching: PropTypes.bool.isRequired,
+  data: PropTypes.array.isRequired,
+  error: PropTypes.string.isRequired,
+  onRequestData: PropTypes.func.isRequired,
+}
 
-  handleSearchSubmit = (value, onRequestData) => {
+class KanjiData extends React.Component {
+  handleSearchSubmit(value, onRequestData) {
     onRequestData(value);
   }
   

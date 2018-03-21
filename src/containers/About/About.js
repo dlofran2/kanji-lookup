@@ -2,14 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class AboutContainer extends React.Component {
-  static propTypes = {
-
+  render() {
+    return (
+      <div>
+        About
+      </div>
+    );
   }
-  render = () => (
-    <div>
-      About
-    </div>
-  )
 }
 
 const mapStateToProps = state => ({

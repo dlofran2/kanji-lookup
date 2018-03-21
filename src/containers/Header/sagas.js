@@ -2,9 +2,7 @@ import { take, all } from 'redux-saga/effects';
 
 import {
     NAV_OPEN,
-    NAV_CLOSE,
-    SEARCH_OPEN,
-    SEARCH_CLOSE,
+    NAV_CLOSE
 } from './constants'
 
 function* watcherSagaHeaderNav() {
@@ -14,17 +12,9 @@ function* watcherSagaHeaderNav() {
     }
 }
 
-function* watcherSagaHeaderSearch() {
-    while(true) {
-        yield take(SEARCH_OPEN);
-        yield take(SEARCH_CLOSE);
-    }
-}
-
 function* watcherSagaHeader() {
     yield all([
         watcherSagaHeaderNav,
-        watcherSagaHeaderSearch,
     ])
 }
 

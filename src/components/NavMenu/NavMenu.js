@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 import './styles.css';
 
-class NavMenu extends Component {
-    static propTypes = {
-        menuVisibility: PropTypes.bool.isRequired,
-        toggleNavMenu: PropTypes.func.isRequired,
-    }
+NavMenu.propTypes = {
+    menuVisibility: PropTypes.bool.isRequired,
+    toggleNavMenu: PropTypes.func.isRequired,
+}
 
+class NavMenu extends Component {
     render() {
         const { menuVisibility, toggleNavMenu } = this.props;
         var visibility = "hide";

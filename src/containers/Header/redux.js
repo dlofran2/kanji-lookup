@@ -1,13 +1,10 @@
 import {
     NAV_OPEN,
-    NAV_CLOSE,
-    SEARCH_OPEN,
-    SEARCH_CLOSE
+    NAV_CLOSE
 } from './constants'
 
 const initialStateHeader = {
-    isNavOpen: false,
-    isSearchOpen: false
+    isNavOpen: false
 }
 
 export function header(state = initialStateHeader, action) {
@@ -15,25 +12,11 @@ export function header(state = initialStateHeader, action) {
         case NAV_OPEN:
             return {
                 isNavOpen: true,
-                isSearchOpen: false, 
             };
         
         case NAV_CLOSE:
             return {
-                ...state,
                 isNavOpen: false,
-            }
-
-        case SEARCH_OPEN:
-            return {
-                isNavOpen: false,
-                isSearchOpen: true,
-            }
-
-        case SEARCH_CLOSE:
-            return {
-                ...state,
-                isSearchOpen: false,
             }
 
         default:

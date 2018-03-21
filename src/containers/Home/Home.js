@@ -2,15 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class HomeContainer extends React.Component {
-  static propTypes = {
-
+  render() {
+    return (
+      <div>
+        Home
+      </div>
+    );
   }
-
-  render = () => (
-    <div>
-      Home
-    </div>
-  )
 }
 
 const mapStateToProps = state => ({

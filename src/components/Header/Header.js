@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import './styles.css';
 import dropdownImg from './assets/dropdown.svg';
 
-class Header extends Component {
-	static propTypes = {
-		requestNavOpen: PropTypes.func.isRequired,
-	}
+Header.propTypes = {
+	requestNavOpen: PropTypes.func.isRequired,
+}
 
+class Header extends Component {
 	render() {
 		const { requestNavOpen } = this.props;
 		return (

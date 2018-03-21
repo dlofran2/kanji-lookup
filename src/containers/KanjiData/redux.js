@@ -14,15 +14,15 @@ export function api(state = initialStateAPI, action) {
 	switch(action.type) {
 		case API_CALL_REQUEST:
 			return {
-				data: [],
 				fetching: true,
 				error: '',
+				data: [],
 			};
 
 		case API_CALL_SUCCESS:
 			return {
-				...state,
 				fetching: false,
+				error: '',
 				data: [...state.data, action.detailedData],
 			};
 

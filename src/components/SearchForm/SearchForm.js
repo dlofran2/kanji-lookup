@@ -6,11 +6,11 @@ import './SearchForm.css';
 
 import search from './assets/search.svg';
 
-class SearchForm extends React.Component {
-  static propTypes = {
-    handleSubmit: PropTypes.func.isRequired,
-  }
+SearchForm.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+}
 
+class SearchForm extends React.Component {
   render() {
     const { handleSubmit } = this.props;
 
