@@ -24,6 +24,7 @@ class SearchForm extends React.Component {
             placeholder='Search...'
             autoComplete='off'
             className='searchInputForm'
+            onFocus={(e) => e.preventDefault}
           />
         </div>
         <div className='searchButton'>

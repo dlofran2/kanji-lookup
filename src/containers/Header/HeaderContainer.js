@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
 import NavMenu from '../../components/NavMenu';
 import Header from '../../components/Header';
 
-class HeaderContainer extends Component {	
+class HeaderContainer extends Component {
+	static propTypes = {
+		isNavOpen: PropTypes.bool.isRequired,
+		requestNavClose: PropTypes.func.isRequired,
+		requestNavOpen: PropTypes.func.isRequired,
+	}
+	
 	render() {
 		const { isNavOpen, requestNavClose, requestNavOpen } = this.props; 
 		return (

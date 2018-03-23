@@ -27,7 +27,7 @@ class NavMenu extends Component {
                     <br />
                     <h2><Link to='/' onClick={toggleNavMenu}>Home</Link></h2>
                     <h2><Link to='/about' onClick={toggleNavMenu}>About</Link></h2>
-                    <h2><Link to='/kanji' onClick={toggleNavMenu}>Kanji</Link></h2>
+                    {/* <h2><Link to='/kanji' onClick={toggleNavMenu}>Kanji</Link></h2> */}
                 </div>
                 <div id="hiddenMenu"
                      className={visibility}

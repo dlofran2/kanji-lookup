@@ -39,7 +39,15 @@ async function fetchDetailedData(args) {
 
 function* workerSagaAPI(arg) {
 	try {
-		const response = yield call(fetchData, arg.data);
+		if (arg.data === undefined) {
+			// eslint-disable-next-line
+			throw 'Word not found';
+		}
+
+		let response = yield call(fetchData, arg.data);
+		if (response.data.length === 0) {
+			response = yield call(fetchData, arg.data.toLowerCase());
+		}
 		const data = response.data;
 
 		if (data.length === 0) {

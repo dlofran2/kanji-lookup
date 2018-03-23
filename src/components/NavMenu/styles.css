@@ -20,7 +20,7 @@
 }
 
 #flyoutMenu h2 a {
-    color: #000005;
+    color: black;
     text-decoration: none;
 }
 
@@ -44,4 +44,14 @@
 #hiddenMenu.show {
     transform: translate3d(0vw, 0, 0);
     overflow: hidden;
+}
+
+#flyoutMenu button {
+    border: 0;
+    background-color: #B4A08F;
+    color: #666666;
+}
+
+#flyoutMenu button:focus {
+	outline: none;
 }

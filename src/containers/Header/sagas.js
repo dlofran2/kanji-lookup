@@ -5,7 +5,7 @@ import {
     NAV_CLOSE,
     SEARCH_OPEN,
     SEARCH_CLOSE,
-} from './constants'
+} from './constants';
 
 function* watcherSagaHeaderNav() {
     while(true) {

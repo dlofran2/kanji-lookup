@@ -1,0 +1,14 @@
+.homeContent {
+    text-align: center;
+    margin: 0 25px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.homeContent h2 {
+    font-size: 14px;
+}
+
+.homeContent p {
+    font-size: 12px;
+}

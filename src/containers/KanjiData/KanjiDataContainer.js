@@ -1,19 +1,26 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-import { requestAPIData } from './actions';
 import KanjiData from '../../components/KanjiData';
 
 class KanjiDataContainer extends React.Component {  
+  static propTypes = {
+		fetching: PropTypes.bool.isRequired,
+		error: PropTypes.string.isRequired,
+		data: PropTypes.array,
+  }
+ 
   render() {
-    const { fetching, error, data, onRequestData } = this.props;
+    const { fetching, error, data } = this.props;
+
     return (
       <div>
         <KanjiData 
           fetching={fetching}
           error={error}
           data={data}
-          onRequestData={onRequestData} />
+          />
       </div>
     );
   }
@@ -27,13 +34,7 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onRequestData: data => dispatch(requestAPIData(data))
-  };
-};
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
 )(KanjiDataContainer);

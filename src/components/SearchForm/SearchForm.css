@@ -1,4 +1,5 @@
 .searchArea {
+    margin-top: 10px;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -36,4 +37,9 @@
     width: 45px;
     height: 45px;
     margin: auto;
+}
+
+.searchButton button {
+    border: 0;
+    background-color: white;
 }

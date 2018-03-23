@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SearchForm from '../SearchForm';
-
 import speaker from './assets/speaker.svg';
 
 import './KanjiData.css';
@@ -12,24 +10,17 @@ class KanjiData extends React.Component {
     fetching: PropTypes.bool.isRequired,
     data: PropTypes.array.isRequired,
     error: PropTypes.string.isRequired,
-    onRequestData: PropTypes.func.isRequired,
   }
 
-  handleSearchSubmit = (value, onRequestData) => {
-    onRequestData(value);
-  }
-  
   playAudio(audio) {
     new Audio(audio).play()
   }
 
   render() {
-    const { fetching, data, error, onRequestData } = this.props;
+    const { fetching, data, error } = this.props;
 
     return (
       <div className="center">
-        <SearchForm onSubmit={values => this.handleSearchSubmit(values.Search, onRequestData)} />
-
         {data.length > 0 &&
           data.map((kanji, i) => {
             return (

@@ -96,7 +96,7 @@
     height: 50px;
     width: 50px;
     padding: 8px 10px 0 10px;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #cccccc;
     background-color: #B7D2B3;
 }
 
@@ -128,6 +128,15 @@
 .exampleOuter {
     display: grid;
     grid-auto-columns: 1fr 1fr 1fr 1fr;
+}
+
+.exampleOuter button {
+    border: 0;
+    background-color: white;
+}
+
+.exampleOuter button:focus {
+    outline: none;
 }
 
 .speaker {
