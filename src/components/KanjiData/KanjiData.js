@@ -7,7 +7,6 @@ import './KanjiData.css';
 
 class KanjiData extends React.Component {
   static propTypes = {
-    fetching: PropTypes.bool.isRequired,
     data: PropTypes.array.isRequired,
     error: PropTypes.string.isRequired,
   }
@@ -17,7 +16,7 @@ class KanjiData extends React.Component {
   }
 
   render() {
-    const { fetching, data, error } = this.props;
+    const { data, error } = this.props;
 
     return (
       <div className="center">
@@ -84,10 +83,6 @@ class KanjiData extends React.Component {
             <p>{error}</p>
             <p>Please try again.</p>
           </span>
-        }
-
-        {fetching === true && 
-          <p>Loading</p>
         }
       </div>
     );

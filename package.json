@@ -22,10 +22,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && mv build/index.html build/200.html",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "surge --domain kanji-lookup.surge.sh --project /Users/dominic/Documents/Github/kanji-lookup/build/"
+    "deploy": "surge --domain kanji-lookup.surge.sh --project /Users/dominic/Documents/Github/kanji-lookup/build/",
+    "publish": "react-scripts build && mv build/index.html build/200.html && surge --domain kanji-lookup.surge.sh --project /Users/dominic/Documents/Github/kanji-lookup/build/"
   },
   "devDependencies": {
     "eslint": "^4.18.1",

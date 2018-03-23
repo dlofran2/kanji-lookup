@@ -20,11 +20,11 @@
 .searchInputForm {
     grid-area: searchInput;
     margin: 3vh 0;
-    height: 3vh;
-    width: auto;
+    padding: 10px 20px;
+    height: 23px;
+    width: 80%;
     cursor: default;
     opacity: 1;
-    padding: 10px 20px;
     overflow: visible;
     border: 1px solid #B4A08F;
         -webkit-border-radius: 5px;
@@ -32,6 +32,12 @@
     font: normal 18px/normal "Times New Roman", Times, serif;
     background-color: #ffffff; 
 }   
+
+.searchInputForm:focus {
+    outline: none !important;
+    border:1px solid #B7D2B3;
+    box-shadow: 0 0 10px #B4A08F;
+}
 
 .searchIcon {
     width: 45px;
@@ -42,4 +48,12 @@
 .searchButton button {
     border: 0;
     background-color: white;
+}
+
+.searchButton button:focus {
+    outline: none !important;
+}
+
+.searchButton button:active {
+    transform: translateY(1px);
 }

@@ -155,3 +155,7 @@
 .center {
     text-align: center;
 }
+
+.kanjiOnKun p {
+    padding-bottom: 2px;
+}

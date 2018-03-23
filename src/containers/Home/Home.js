@@ -7,6 +7,7 @@ import { requestAPIData } from '../KanjiData/actions';
 import KanjiDataContainer from '../KanjiData';
 import Home from '../../components/Home';
 import SearchForm from '../../components/SearchForm';
+import Loading from '../../components/Loading';
 
 class HomeContainer extends React.Component {
   static propTypes = {
@@ -33,8 +34,13 @@ class HomeContainer extends React.Component {
         }
 
         {
-          (data.length > 0 || error !== '' || fetching !== false) &&
+          ((data.length > 0 || error !== '') && fetching === false) &&
           <KanjiDataContainer />
+        }
+
+        {
+          fetching === true && 
+          <Loading />
         }
       </div>
     );
