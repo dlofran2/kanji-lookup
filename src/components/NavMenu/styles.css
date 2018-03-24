@@ -55,3 +55,23 @@
 #flyoutMenu button:focus {
 	outline: none;
 }
+
+@media only screen and (min-width: 540px) {
+    #flyoutMenu {
+        width: 30vw;
+    }
+
+    #hiddenMenu {
+        position: fixed;
+        top: 0;
+        left: 30%;
+    }
+
+    #hiddenMenu.hide {
+        width: 0;
+    } 
+
+    #hiddenMenu.show {
+        width: 70vw;
+    } 
+}

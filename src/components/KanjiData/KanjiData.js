@@ -60,7 +60,7 @@ class KanjiData extends React.Component {
                   {kanji.examples.map((example, k) => {
                     return (
                       <div className="exampleOuter" key={k}>
-                        <button onClick={() => this.playAudio(example.audio.mp3)}>
+                        <button className="speakerLocation" onClick={() => this.playAudio(example.audio.mp3)}>
                           <img className="speaker" src={speaker} alt="Play" />
                         </button>
                         <div className="exampleDataKanji">

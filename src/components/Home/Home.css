@@ -12,3 +12,9 @@
 .homeContent p {
     font-size: 12px;
 }
+
+@media only screen and (min-width: 540px) {
+    .homeContent {
+        margin: 10px 50px; 
+    }
+}

@@ -159,3 +159,25 @@
 .kanjiOnKun p {
     padding-bottom: 2px;
 }
+
+@media only screen and (min-width: 540px) {
+    .exampleDataKanji {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .speakerLocation {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    .speaker {
+        padding-right: 10px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .kanjiSteps {
+        margin: 10px 75px 10px 75px;
+    }
+}

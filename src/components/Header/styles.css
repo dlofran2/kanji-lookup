@@ -25,6 +25,10 @@
 	outline: none;
 }
 
+.dropdownIcon:active {
+	transform: translateY(-1px);
+}
+
 .grid {
 	height: auto;
 	display: grid;
@@ -41,6 +45,9 @@
 	color: white;
 	font-size: 40px;
 	padding-bottom: 5px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
 }
 
 .search {
@@ -49,4 +56,19 @@
 
 .dropdown {
 	grid-area: dropdown;
+}
+
+@media only screen and (min-width: 540px) {
+	.grid {
+		height: 12vh;
+	}
+
+	.title h1 {
+		padding: 0;
+	}
+
+	.dropdownIcon {
+		position: relative;
+		top: 31%;
+	}
 }

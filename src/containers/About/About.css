@@ -6,3 +6,9 @@
     text-align: center;
     margin: 10px 25px;
 }
+
+@media only screen and (min-width: 540px) {
+    .aboutContent {
+        margin: 0 75px; 
+    }
+}
