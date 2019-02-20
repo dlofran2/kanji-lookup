@@ -1,65 +1,65 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .dropdownIcon {
-	width: 27px;
-	height: 27px;
-	position: relative;
-	top: 36.08%;
-	background-color: #B7D2B3;
-	box-sizing: border-box;
-	padding: 0;
-	border: 0;
+  width: 27px;
+  height: 27px;
+  position: relative;
+  top: 36.08%;
+  background-color: #b7d2b3;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
 }
 
 .dropdownIcon:focus {
-	outline: none;
+  outline: none;
 }
 
 .dropdownIcon:active {
-	transform: translateY(-1px);
+  transform: translateY(-1px);
 }
 
 .grid {
-	height: auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-areas: "dropdown title title search";
-	background-color: #B7D2B3;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "dropdown title title search";
+  background-color: #b7d2b3;
 }
 
 .title {
-	grid-area: title;
+  grid-area: title;
 }
 
 .title h1 {
-	color: white;
-	font-size: 40px;
-	padding-bottom: 5px;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%); 
+  color: white;
+  font-size: 40px;
+  padding-bottom: 5px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .dropdown {
-	grid-area: dropdown;
+  grid-area: dropdown;
 }
 
 @media only screen and (min-width: 540px) {
-	.grid {
-		height: 12vh;
-	}
+  .grid {
+    height: 12vh;
+  }
 
-	.title h1 {
-		position: static;
-		margin-top: 6vh;
-		padding: 0;
-	}
+  .title h1 {
+    position: static;
+    margin-top: 6vh;
+    padding: 0;
+  }
 
-	.dropdownIcon {
-		top: 0;
-		margin-top: 2vh;
-	}
+  .dropdownIcon {
+    top: 0;
+    margin-top: 2vh;
+  }
 }

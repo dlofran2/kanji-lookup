@@ -1,183 +1,181 @@
 .kanjiGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    font: "Open Sans";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  font: "Open Sans";
 }
 
 .kanjiCharacterSection {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
 }
 
 .kanjiCharacter {
-    font: 72px "Open Sans";
+  font: 72px "Open Sans";
 }
 
 .kanjiMeaning {
-    font: 24px "Open Sans";
+  font: 24px "Open Sans";
 }
 
 .kanjiPronunciation {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font: 18px "Open Sans";
-    padding: 10px 15px;
-    text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font: 18px "Open Sans";
+  padding: 10px 15px;
+  text-align: center;
 }
 
 .kanjiOnKun {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    text-align: right;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: right;
 }
 
 .kanjiOnKunData {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    text-align: left;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: left;
 }
 
 .kanjiRadical {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    text-align: center;
-    font: 18px "Open Sans";
-    padding: 10px;
-
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  font: 18px "Open Sans";
+  padding: 10px;
 }
 
 .radicalGrid {
-    display: grid;
-    grid-auto-columns: 1fr 1fr;
-    text-align: center;
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  text-align: center;
 }
 
-
 .radicalData {
-    grid-column-start: 2;
-    grid-column-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 .kanjiSteps {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin: 10px 5px 10px 5px;
-    overflow-x: auto;
-    white-space: nowrap;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: 10px 5px 10px 5px;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .strokeOrder {
-    font: 18px "Open Sans";
-    margin-left: 10px;
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 3;
-    grid-row-end: 4;
+  font: 18px "Open Sans";
+  margin-left: 10px;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .kanjiStepOuter {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    padding: 8px 10px 0 10px;
-    border: 1px solid #cccccc;
-    background-color: #B7D2B3;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  padding: 8px 10px 0 10px;
+  border: 1px solid #cccccc;
+  background-color: #b7d2b3;
 }
 
 .kanjiStepInner {
-    height: 45px;
-    width: 45px;
+  height: 45px;
+  width: 45px;
 }
 
 .bottomBorder {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    border-bottom: 1px solid #999999;
-    width: 80%;
-    padding: 10px 0;
-    margin: auto;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  border-bottom: 1px solid #999999;
+  width: 80%;
+  padding: 10px 0;
+  margin: auto;
 }
 
 .kanjiExample {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    text-align: left;
-    padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: left;
+  padding: 10px;
 }
 
 .exampleOuter {
-    display: grid;
-    grid-auto-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr 1fr;
 }
 
 .exampleOuter button {
-    border: 0;
-    background-color: white;
+  border: 0;
+  background-color: white;
 }
 
 .exampleOuter button:focus {
-    outline: none;
+  outline: none;
 }
 
 .speaker {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    height: 20px;
-    width: 20px;
-    position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 20px;
+  width: 20px;
+  position: relative;
 }
 
 .exampleDataKanji {
-    grid-column-start: 2;
-    grid-column-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 5;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .kanjiOnKun p {
-    padding-bottom: 2px;
+  padding-bottom: 2px;
 }
 
 @media only screen and (min-width: 540px) {
-    .exampleDataKanji {
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
+  .exampleDataKanji {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
 
-    .speakerLocation {
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-    
-    .speaker {
-        padding-right: 10px;
-        height: 30px;
-        width: 30px;
-    }
+  .speakerLocation {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 
-    .kanjiSteps {
-        margin: 10px 75px 10px 75px;
-    }
+  .speaker {
+    padding-right: 10px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .kanjiSteps {
+    margin: 10px 75px 10px 75px;
+  }
 }

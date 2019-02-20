@@ -1,47 +1,41 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import React from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
-import { requestAPIData } from '../KanjiData/actions';
+import { requestAPIData } from "../KanjiData/actions";
 
-import KanjiDataContainer from '../KanjiData';
-import Home from '../../components/Home';
-import SearchForm from '../../components/SearchForm';
-import Loading from '../../components/Loading';
+import KanjiDataContainer from "../KanjiData";
+import Home from "../../components/Home";
+import SearchForm from "../../components/SearchForm";
+import Loading from "../../components/Loading";
 
 class HomeContainer extends React.Component {
   static propTypes = {
-		fetching: PropTypes.bool.isRequired,
-		error: PropTypes.string.isRequired,
+    fetching: PropTypes.bool.isRequired,
+    error: PropTypes.string.isRequired,
     data: PropTypes.array,
-    onRequestData: PropTypes.func.isRequired,
-  }
-  
+    onRequestData: PropTypes.func.isRequired
+  };
+
   handleSearchSubmit = (value, onRequestData) => {
     onRequestData(value);
-  }
+  };
 
   render() {
     const { fetching, error, data, onRequestData } = this.props;
 
     return (
       <div>
-        <SearchForm onSubmit={values => this.handleSearchSubmit(values.Search, onRequestData)} />
-
-        {
-          (data.length === 0 && error === '' && fetching === false) && 
-          <Home />
-        }
-
-        {
-          ((data.length > 0 || error !== '') && fetching === false) &&
+        <SearchForm
+          onSubmit={values =>
+            this.handleSearchSubmit(values.Search, onRequestData)
+          }
+        />
+        {data.length === 0 && error === "" && fetching === false && <Home />}
+        {(data.length > 0 || error !== "") && fetching === false && (
           <KanjiDataContainer />
-        }
-
-        {
-          fetching === true && 
-          <Loading />
-        }
+        )}
+        {fetching === true && <Loading />}
       </div>
     );
   }
@@ -62,5 +56,5 @@ const mapDispatchToProps = dispatch => {
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(HomeContainer);

@@ -1,34 +1,34 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Field, reduxForm } from 'redux-form';
+import React from "react";
+import PropTypes from "prop-types";
+import { Field, reduxForm } from "redux-form";
 
-import './SearchForm.css';
+import "./SearchForm.css";
 
-import search from './assets/search.svg';
+import search from "./assets/search.svg";
 
 class SearchForm extends React.Component {
   static propTypes = {
-    handleSubmit: PropTypes.func.isRequired,
-  }
+    handleSubmit: PropTypes.func.isRequired
+  };
 
   render() {
     const { handleSubmit } = this.props;
 
     return (
       <form onSubmit={handleSubmit} className="searchArea">
-        <div className='searchBox'>
+        <div className="searchBox">
           <Field
-            name='Search'
-            component='input'
-            type='text'
-            placeholder='Search...'
-            autoComplete='off'
-            className='searchInputForm'
-            onFocus={(e) => e.preventDefault}
+            name="Search"
+            component="input"
+            type="text"
+            placeholder="Search..."
+            autoComplete="off"
+            className="searchInputForm"
+            onFocus={e => e.preventDefault}
           />
         </div>
-        <div className='searchButton'>
-          <button type='submit'>
+        <div className="searchButton">
+          <button type="submit">
             <img src={search} alt="Search" className="searchIcon" />
           </button>
         </div>
@@ -38,5 +38,5 @@ class SearchForm extends React.Component {
 }
 
 export default reduxForm({
-  form: 'kanjiPage'
+  form: "kanjiPage"
 })(SearchForm);

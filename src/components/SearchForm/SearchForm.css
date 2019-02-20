@@ -1,82 +1,89 @@
 .searchArea {
-    margin-top: 10px;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "searchBox searchBox searchBox searchButton"
+  margin-top: 10px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "searchBox searchBox searchBox searchButton";
 }
 
 .searchBox {
-    grid-area: searchBox;
-    width: 80%;
-    margin: auto;
+  grid-area: searchBox;
+  width: 80%;
+  margin: auto;
 }
 
 .searchButton {
-    grid-area: searchButton;
-    margin: auto;
+  grid-area: searchButton;
+  margin: auto;
 }
 
 .searchInputForm {
-    grid-area: searchInput;
-    margin: 3vh 0;
-    padding: 10px 20px;
-    height: 23px;
-    width: 80%;
-    cursor: default;
-    opacity: 1;
-    overflow: visible;
-    border: 1px solid #B4A08F;
-        -webkit-border-radius: 5px;
-    border-radius: 5px;
-    font: normal 18px/normal "Times New Roman", Times, serif;
-    background-color: #ffffff; 
-}   
+  grid-area: searchInput;
+  margin: 3vh 0;
+  padding: 10px 20px;
+  height: 23px;
+  width: 80%;
+  cursor: default;
+  opacity: 1;
+  overflow: visible;
+  border: 1px solid #b4a08f;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font: normal 18px / normal "Times New Roman", Times, serif;
+  background-color: #ffffff;
+}
 
 .searchInputForm:focus {
-    outline: none !important;
-    border: 1px solid #B7D2B3;
-    box-shadow: 0 0 10px #B4A08F;
+  outline: none !important;
+  border: 1px solid #b7d2b3;
+  box-shadow: 0 0 10px #b4a08f;
 }
 
 .searchIcon {
-    width: 45px;
-    height: 45px;
-    margin: auto;
+  width: 45px;
+  height: 45px;
+  margin: auto;
 }
 
 .searchButton button {
-    border: 0;
-    background-color: white;
+  border: 0;
+  background-color: white;
 }
 
 .searchButton button:focus {
-    outline: none !important;
+  outline: none !important;
 }
 
 .searchButton button:active {
-    transform: translateY(-1px);
+  transform: translateY(-1px);
 }
 
 @media only screen and (min-width: 540px) {
-    .searchArea {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "searchBox searchBox searchBox searchBox searchBox . searchButton searchButton .";
-    }
+  .searchArea {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "searchBox searchBox searchBox searchBox searchBox . searchButton searchButton .";
+  }
 
-    .searchBox {
-        width: 100%;
-        margin: 5px;
-    }
+  .searchBox {
+    width: 100%;
+    margin: 5px;
+  }
 
-    .searchInputForm {
-        padding: 10px 5px;
-        margin-left: 75px;
-    }
-    
-    .searchButton {
-        margin: auto 0;
-        position: relative;
-        top: 2px;
-    }
+  .searchInputForm {
+    padding: 10px 5px;
+    margin-left: 75px;
+  }
+
+  .searchButton {
+    margin: auto 0;
+    position: relative;
+    top: 2px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .searchArea {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . searchBox searchBox searchBox searchButton . . .";
+  }
 }
